@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const SocketManager = require('./socketmanager')
+const cors = require('cors');
 const server = require('http').createServer(app);
 const io = module.exports.io = require('socket.io')(server, { origins: '*:*'});
 const PORT = process.env.PORT || 8080
@@ -14,7 +15,7 @@ const PORT = process.env.PORT || 8080
 
 io.on('connection', SocketManager)
 // console.log(io)
-
+app.use(cors())
 app.listen(PORT)
 console.log("app is listening on port " + PORT)
 
