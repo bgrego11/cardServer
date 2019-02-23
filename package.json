@@ -1,0 +1,26 @@
+{
+  "name": "cardserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgrego11/cardServer.git"
+  },
+  "author": "ben n steve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgrego11/cardServer/issues"
+  },
+  "homepage": "https://github.com/bgrego11/cardServer#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  }
+}
